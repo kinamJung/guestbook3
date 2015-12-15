@@ -1,26 +1,29 @@
 package com.hanains.guestbook.vo;
 
+/**
+ * @author bit-user
+ *
+ */
 public class GuestBookVo {
 
 	private Long no;
 	private String name;
 	private String password;
 	private String message;
-	private String date;
-	
+	private String regDate ;
 	
 	
 	public GuestBookVo() {
 		
 	}
 	public GuestBookVo(Long no, String name, String password, String message,
-			String date) {
+			String regDate ) {
 		super();
 		this.no = no;
 		this.name = name;
 		this.password = password;
 		this.message = message;
-		this.date = date;
+		this.regDate  = regDate ;
 	}
 	public GuestBookVo(String name, String password, String message) {
 		super();
@@ -52,19 +55,17 @@ public class GuestBookVo {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public String getDate() {
-		return date;
+	public String getRegDate() {
+		return regDate;
 	}
-	public void setDate(String date) {
-		this.date = date;
+	public void setRegDate(String regDate) {
+		this.regDate = regDate;
 	}
-	
 	@Override
 	public String toString() {
 		return "GuestBookVo [no=" + no + ", name=" + name + ", password="
-				+ password + ", message=" + message + ", date=" + date + "]";
+				+ password + ", message=" + message + ", regDate=" + regDate
+				+ "]";
 	}
-	
-	
 	
 }

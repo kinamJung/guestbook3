@@ -45,7 +45,7 @@
 			<tr>
 				<td>${count-status.index}</td>
 				<td>${vo.name}</td>
-				<td>${vo.date}</td>
+				<td>${vo.regDate}</td>
 				<td><a href="/guestbook3/deleteForm/${vo.no}">삭제</a></td>
 			</tr>
 			<tr>
